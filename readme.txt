@@ -11,7 +11,7 @@ Adds custom sections to the Storefront homepage.
 
 == Description ==
 
-A simple plugin that adds custom homepage sections to Storefront - includes a slider configurable via the Customizer.
+A simple plugin that adds custom homepage sections to the Storefront theme - includes a slider configurable via the Customizer.
 1. Select from products or sticky posts as slider content. 
 2. Set slider mode - slide or fade. 
 3. Set slider direction for the slide mode.

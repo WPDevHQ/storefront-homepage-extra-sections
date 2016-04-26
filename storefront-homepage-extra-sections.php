@@ -2,7 +2,7 @@
 /**
  * Plugin Name:         Storefront Homepage Extra Sections
  * Plugin URI:          http://wpdevhq.com/portfolio/storefront-homepage-extra-sections/
- * Description:         Adds a simple contact section to your Storefront powered site.
+ * Description:         A simple plugin that adds custom homepage sections to the Storefront theme - includes a slider configurable via the Customizer.
  * Version:             1.0.0
  * Author:              WPDevHQ
  * Author URI:          http://wpdevhq.com/
