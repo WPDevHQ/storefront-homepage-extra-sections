@@ -2,8 +2,8 @@
 Contributors: WPDevHQ
 Tags: woocommerce, ecommerce, storefront, contact, form, map, email
 Requires at least: 4.0
-Tested up to: 4.5
-Stable tag: 1.0.0
+Tested up to: 4.5.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,6 +55,10 @@ You can reach me [@WPDevHQ](http://wpdevhq.com) for proffesional support.
 4. The Homepage
 
 == Changelog ==
+
+= 1.0.1 =
+Update file include method to do it the right way - props: Plugin Review Team
+Removed style.scss as its not actually needed and was a residue file from a base plugin.
 
 = 1.0.0 =
 Initial release.

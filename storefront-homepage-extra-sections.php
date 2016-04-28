@@ -3,11 +3,11 @@
  * Plugin Name:         Storefront Homepage Extra Sections
  * Plugin URI:          http://wpdevhq.com/portfolio/storefront-homepage-extra-sections/
  * Description:         A simple plugin that adds custom homepage sections to the Storefront theme - includes a slider configurable via the Customizer.
- * Version:             1.0.0
+ * Version:             1.0.1
  * Author:              WPDevHQ
  * Author URI:          http://wpdevhq.com/
  * Requires at least:   4.0
- * Tested up to:        4.5
+ * Tested up to:        4.5.1
  *
  * Text Domain: storefront-homepage-extra-sections
  * Domain Path: /languages/
@@ -18,7 +18,6 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
 
 /**
  * Returns the main instance of Storefront_Homepage_Extra_Sections to prevent the need to use globals.
@@ -232,7 +231,7 @@ final class Storefront_Homepage_Extra_Sections {
 	 */
 	public function shes_section_widgets() {
 		/* Include the widget register initiator */
-        require_once( 'assets/widgets-init.php' );
+        include_once( plugin_dir_path( __FILE__ ) . 'assets/widgets-init.php' );
 	}
 
 	/**
@@ -241,7 +240,7 @@ final class Storefront_Homepage_Extra_Sections {
 	 */
 	public function shes_customize_register( $wp_customize ) {
 		/* Include the customizer class here via require_once call */
-        require_once( 'assets/customizer.php' );
+        include_once( plugin_dir_path( __FILE__ ) . 'assets/customizer.php' );
 	}
 
 	/**
@@ -290,9 +289,9 @@ final class Storefront_Homepage_Extra_Sections {
 	 */
 	public static function storefront_homepage_slider() {
 	    if ( get_theme_mod( 'shes_slider_content' ) == 'products' ) {
-		    require_once( 'sections/product-slider.php' );
+		    include_once( plugin_dir_path( __FILE__ ) . 'sections/product-slider.php' );
 		} elseif ( get_theme_mod( 'shes_slider_content' ) == 'posts' ) {
-			require_once( 'sections/post-slider.php' );
+			include_once( plugin_dir_path( __FILE__ ) . 'sections/post-slider.php' );
 		}		
 	}
 
@@ -302,7 +301,7 @@ final class Storefront_Homepage_Extra_Sections {
 	 * @return 	void
 	 */
 	public static function storefront_tripple_widgets() {
-	    require_once( 'sections/tripple-widgets.php' );
+	    include_once( plugin_dir_path( __FILE__ ) . 'sections/tripple-widgets.php' );
 	}
 	
 	/**
@@ -311,7 +310,7 @@ final class Storefront_Homepage_Extra_Sections {
 	 * @return 	void
 	 */
 	public static function storefront_fullwidth_widget() {
-	    require_once( 'sections/fullwidth-widget.php' );
+	    include_once( plugin_dir_path( __FILE__ ) . 'sections/fullwidth-widget.php' );
 	}
 	
 } // End Class
